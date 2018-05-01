@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #222222;
+    font-family: "Press Start 2P", sans-serif;
+}
+#flex {
+    display: flex;
+    justify-content: center;
+}
+
+#main-header {
+    font-size: 2vmin;
+    padding: .75vmin;
+    margin: 1vmin;
+    border: .5vmin solid #888888;
+    border-radius: 1vmin;
+    background-color: #eeeeee;
+    position: absolute;
+    text-align: center;
+    vertical-align: center;
+    z-index: 1;
+}
+
+#background {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+#link {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+#goblin {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+#attack{
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+/*
+
+#header-div {
+    margin-top: 1vmin;
+    height: fit-content;
+    border: 1vmin solid #888888;
+    border-radius: 1vmin;
+    color: #eeeeee;
+    text-align: center;
+    width: fit-content;
+    display: none;
+}
+
+
+
+#hp-info-flex {
+    max-width: 1200px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 30vmin;
+}
+
+#hp-info {
+    width: fit-content;
+    border: .5vmin solid #888888;
+    background-color: #222222;
+    padding: 1vmin;
+    font-size: 2vmin;
+    position: absolute;
+}
+
+#center-row-2 {
+    height: 85vmin;
+    padding-top: .5%;
+    box-sizing: border-box;
+}
+
+#center-col-2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+#center-background {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    display: none;
+    z-index: -1;
+}
+
+#link {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    display: none;
+    animation: blink .3s;
+    animation-iteration-count: 0;
+}
+
+#goblin {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    display: none;
+    animation: blink .3s;
+    animation-iteration-count: 0;
+}
+
+#wolf {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    display: none;
+}
+
+#attack {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    display: none;
+}
+
+#skull {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    object-fit: contain;
+    display: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#start-box {
+    color: #eeeeee;
+    border: 1vmin solid #888888;
+    height: fit-content;
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    padding: 2vmin;
+    max-width: 100vmin;
+    margin: auto;
+    margin-left: 15vmin;
+    margin-right: 15vmin;
+}
+
+#game-over-box {
+    color: #eeeeee;
+    border: 1vmin solid #888888;
+    height: fit-content;
+    border-radius: 1vmin;
+    font-size: 2vmin;
+    padding: 2vmin;
+    max-width: 100vmin;
+    margin: auto;
+    margin-left: 15vmin;
+    margin-right: 15vmin;
+    text-align: center;
+    display: none;
+    background-color: #222222;
+}
+
+#game-over-font {
+    font-size: 3vmin;
+    color: red;
+}
+
+#word {
+    letter-spacing: 1vmin;
+}
+
+#guess {
+    letter-spacing: 1vmin;
+    color: red;
+    padding: 0;
+}
