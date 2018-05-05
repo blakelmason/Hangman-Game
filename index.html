@@ -7,67 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 
 <body>
-    <div id="flex">
+    <div id="wrapper">
         <div id="intro">
-            Welcome to Hangman Adventure!!!!!
+            <div id="intro-style">Welcome to Hangman Adventure!!!!!</div>
             <br>
-            <br> Controls: Press any key on the keyboard to guess a letter
+            <br>
+            <br> Controls: Press any key on the keyboard to guess a letter.
+            <br>
             <br>
             <br> Press the SPACEBAR to begin your adventure...
         </div>
         <div id="main-header">
             Hangman Adventure!!!!!
         </div>
+        <div id="level-div">
+            Level:<span id="level"></span>
+        </div>
+        <div id="guess-div">
+            Guessed:<span id="guess"></span>
+        </div>
+        <div id="word-div">
+            Word: <span id="word"></span>
+        </div>
+        <div id="hp-div">
+            HP:<span id="hp"></span>
+        </div>
+        <div id="letter-attack">A</div>
         <img src="./assets/images/background.gif" id="background" alt="">
         <img src="./assets/images/link.gif" id="link" alt="">
         <img src="./assets/images/goblin.gif" id="goblin" alt="">
-        <img src="./assets/images/attack.gif" id="attack" alt="">
-        <img src="./assets/images/attack2.gif" id="attack" alt="">
+        <img src="./assets/images/wolf.gif" id="wolf" alt="">
+        <img src="./assets/images/dragon.gif" id="dragon" alt="">
+        <img src="./assets/images/boss.gif" id="boss" alt="">
+        <img src="./assets/images/attack1.gif" id="attack1" alt="">
+        <img src="./assets/images/attack2.gif" id="attack2" alt="">
+        <img src="./assets/images/attack1-boss.gif" id="attack1-boss" alt="">
+        <img src="./assets/images/attack2-boss.gif" id="attack2-boss" alt="">        
+        <img src="./assets/images/slash1.gif" id="slash1" alt="">
+        <img src="./assets/images/slash2.gif" id="slash2" alt="">
+        <img src="./assets/images/special.gif" id="special" alt="">
+        <div id="transition">
+            The monster has been slain!
+            <br>
+            <br>
+            <br>
+            Press the SPACEBAR to continue your adventure!!!!!
+        </div>
+        <div id="transition-sound">
+            Please turn on your sound then press SPACEBAR to continue.
+        </div>
+        <div id="game-over">
+            <div id="game-over-style">GAME OVER</div><br>
+            Please refresh the page to try again.
+        </div>
+        <div id="suspense-div1">
+            <div id="suspense-text1">You feel something...</div>
+            <div id="suspense-text2">a rumbling in the distance...</div>
+            <div id="suspense-text3">the earth begins to tremble beneath your feet!</div>
+            <div id="suspense-text4">You sense a great force...</div>
+            <div id="suspense-text5">A powerful enemy approaches!</div>
+            <div id="suspense-text6">Ready your sword!</div>
+            <div id="suspense-text7">Raise your shield!</div>
+            <div id="suspense-text8">For the final battle!</div>
+            <div id="suspense-text9">HAS</div>
+            <div id="suspense-text10">COME!!!</div>
+        </div>
+        <div id="winner">
+                The monster has been slain! You have won! 
+                <br>
+                <br>
+                Congratulations hero!!!!
+        </div>      
     </div>
 </body>
 
 <script type="text/javascript" src="./assets/javascript/game.js"></script>
 </html>
-        <!-- <div id="header-info-div">
-                    
-                    <div class="header-info">
-                        word: <span id="word"></span>
-                    </div>
-                    <div class="header-info">
-                        guess:<span id="guess"></span>
-                    </div>
-                    <div class="header-info" style="padding-right: 1vmin;">
-                        Lvl:<span id="lvl"></span>
-                    </div>
-    </div>
-    <div id="hp-info-flex">
-        <div id="hp-info">
-            HP:
-            <span id="hp"></span>
-        </div>
-    </div>
-    <div id="start-box">
-        Welcome to Hangman Adventure!!!!!
-        <br>
-        <br> Controls: Press any key on the keyboard to guess a letter
-        <br>
-        <br> Press the SPACEBAR to begin your adventure...
-    </div>
-    <div id="game-over-box">
-        <div id="game-over-font">
-            GAME OVER
-            <br>
-        </div>
-        Refresh the page page to try again.
-    </div>
-    <img src="./assets/images/background.gif" id="center-background" alt="">
-    <img src="./assets/images/link.gif" id="link" alt="">
-    <img src="./assets/images/goblin.gif" id="goblin" alt="">
-    <img src="./assets/images/attack.gif" id="attack" alt="">
+
